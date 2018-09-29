@@ -34,6 +34,17 @@ public class Dish {
         return type;
     }
 
+
+    public String getCategoryLevel(){
+        if (getCalories()>500)
+            return "HIGH";
+        else if (getCalories()>300)
+            return "MIDDLE";
+        else
+            return "LOW";
+    }
+
+
     @Override
     public String toString() {
         return "Dish{" +
